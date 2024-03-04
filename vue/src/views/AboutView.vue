@@ -1,15 +1,26 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<!-- <template>
+    <h2 class="header">SHOPPING CART</h2>
+    <cart class="ShoppingCart" :cart="this.cart" :total="this.total"> 
+    
+    </cart>
+</template> -->
+<script>
+import { defineProps } from 'vue';
+const props = defineProps({
+ cart: Array,
+ bedthing: Object
+})
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+</script>
+<style scoped>
+
+.ShoppingCart{
+  width: 50rem;
+  background-color: brown;
+  margin-left: 50%;
 }
+.header{
+  line-height: 1.5%;
+}
+
 </style>
